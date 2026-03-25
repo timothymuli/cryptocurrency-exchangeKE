@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-deep: #0b0e11;
+  --bg-panel: #161a1e;
+  --bg-raised: #1e2329;
+  --border-line: #2b3139;
+  --text-main: #eaecef;
+  --text-dim: #848e9c;
+  --buy: #0ecb81;
+  --buy-bg: rgba(14, 203, 129, 0.12);
+  --sell: #f6465d;
+  --sell-bg: rgba(246, 70, 93, 0.12);
+  --gold: #fcd535;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg-deep);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.app-bg {
+  background-color: var(--bg-deep);
+  background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(252, 213, 53, 0.06), transparent);
+}

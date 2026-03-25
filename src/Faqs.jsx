@@ -1,17 +1,23 @@
 function Faq() {
-    // a simple help box
     return (
-        <div className='bg-white rounded max-w-sm mx-auto mt-10 mb-10 p-5 shadow'>
-            <div className='font-bold mb-2 p-5 shadow'>FAQ - Questions People Ask</div>
-            <div className='text-gray-700 text-sm'>
-                <div>- Is it real? <b>No</b>. Everything here is for practice only.</div>
-                <div>- Can I lose money? <b>Nope</b>, it's all fake.</div>
-                <div>- Why KES? Because we are in Kenya and it's easier to relate to.</div>
-                <div>- How to use? Choose coins, enter amount, and click Convert.</div>
-                <div>- Why keep 'Previous'? Shows what you tried before.</div>
-                <div>- What rates? See above.</div>
+        <footer className="max-w-[1600px] mx-auto px-3 sm:px-4 py-8 border-t border-[var(--border-line)] mt-4">
+            <div className="grid sm:grid-cols-2 gap-6 text-xs text-[var(--text-dim)]">
+                <div>
+                    <p className="font-mono text-[var(--gold)] mb-2">What this is</p>
+                    <p className="leading-relaxed">
+                        A small full-stack sample: React UI + Django REST API + SQLite. Rates are fixed in code. No bank
+                        or blockchain hooks.
+                    </p>
+                </div>
+                <div>
+                    <p className="font-mono text-[var(--gold)] mb-2">Notes</p>
+                    <ul className="space-y-1 leading-relaxed">
+                        <li>KES is there so numbers feel local if you work in Kenya.</li>
+                        <li>Change the brand string in Header / Login if you want your own name on the bar.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </footer>
     );
 }
 
